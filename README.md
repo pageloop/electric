@@ -20,3 +20,8 @@ The Electric sync service for Pageloop, deployed on Render from this Dockerfile.
   logs survive restarts and clients don't all resync after a deploy.
 - A restart takes ~35 s (disk-backed services cannot do zero-downtime deploys).
 - `ELECTRIC_SECRET` and `DATABASE_URL` are set on the service.
+
+## History
+
+Replaces `dinakartumu/electric-staging` (public, which both services built from until 2026-10-08)
+and `pageloop/electric-staging` (private, which Render's GitHub app could not read). Both are archived.
